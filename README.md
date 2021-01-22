@@ -16,3 +16,14 @@ URL - https://4hfvpey3dk.execute-api.ap-south-1.amazonaws.com/v1/bill-apis/stage
 4. api_wrapper.py - makes call to functions present in the above 3 files.
 
 5. requirements.txt - consists of all the required packages that need to be installed.
+
+
+INPUT 
+
+Bill Fetch API Input Request Payload = '{"data": {"loan_number":"BAS123JKE"},"checksum": "4406f3578082e33d1b16c0a7da74d2eb921eab48"}'
+
+Bill Pay API Input Response Payload = '{"data": {"loan_number":"BAS123JKE", "fetchId": "37797773", "amountPaid":"2000", "txnRefId":"12312asD"},"checksum": "e9b17c190f20147e19c52cf9b32ad78b2069c0db"}'
+
+OUTPUT
+
+Prints encrypted requests, decrypted response of both the APIs.
